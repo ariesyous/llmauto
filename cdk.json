@@ -1,0 +1,17 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/app.ts",
+  "watch": {
+    "include": ["**"],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "node_modules",
+      "cdk.out"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-ecs:arnFormat": "arn:aws:ecs:region:account:service/cluster-name/service-name",
+    "@aws-cdk/core:stackRelativeExports": true
+  }
+}

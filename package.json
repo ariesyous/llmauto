@@ -1,0 +1,23 @@
+{
+  "name": "open-webui-aws-deploy",
+  "version": "1.0.0",
+  "description": "AWS CDK deployment for Open WebUI with Bedrock",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "cdk deploy --require-approval never",
+    "destroy": "cdk destroy",
+    "synth": "cdk synth"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.0",
+    "aws-cdk": "^2.100.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.1.6"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.100.0",
+    "constructs": "^10.0.0"
+  }
+}
